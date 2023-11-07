@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      *
+      {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      body
+      {
+          height: 100%;
+          width: 100%;
+      }
+      .container
+      {
+          display: flex;
+          max-width: 95vw;
+          padding: 2rem 1rem;
+          margin: 0 auto;
+          /* height: 45px; */
+          justify-content: center;
+          align-items: center;
+          justify-content: space-between;
+          justify-content: space-evenly; 
+      }
+      .header_container
+      {
+          margin-bottom: 1.5rem;
+
+      }
+      .header_title
+      {
+          margin-bottom: 1rem;
+          font-size: 1.7rem;
+          line-height: 2rem;
+          font-weight: 700;
+          text-align: center;
+      }
+      .header_desc
+      {
+          max-width: 568px;
+          text-align: center;
+          color: rosybrown;
+         margin: 0 auto ;
+      }
+      .main_container
+      {
+          display: grid;
+          gap: 5.5rem;
+          grid-template-columns: repeat(4,1fr);
+          /* grid-template-rows: 1.5rem; */
+          grid-auto-rows: 2fr;
+      }
+       @media(min-width:350px)
+       {
+          .main_container
+          {
+          grid-template-columns: repeat(1, 1fr);
+          }
+       }
+       @media(min-width:650px)
+       {
+          .main_container
+          {
+          grid-template-columns: repeat(2, 1fr);
+          }
+       }
+       @media(min-width:1080px)
+       {
+          .main_container
+          {
+          grid-template-columns: repeat(3, 1fr);
+          }
+       }
+       @media(min-width:1340px)
+       {
+          .main_container
+          {
+          grid-template-columns: repeat(4, 1fr);
+          }
+       }
+      .card_container
+      {
+          display: flex;
+          flex-direction: column;
+          border: 1px solid black;
+          border-radius: 32px;
+          overflow: hidden;
+      }
+      .card_image_container
+      {
+          position: relative;
+          overflow: hidden;
+          height: 11rem;
+      }
+      @media(min-width:768px)
+       {
+          .card_image_container
+          {
+           height: 16rem;
+          }
+       }
+
+      .card_image
+      {
+          object-fit: cover;
+          object-position: center;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+      }
+      .card_title_container
+      {
+          display: flex;
+          flex-direction: column;
+          padding: 1.5rem;
+
+      }
+     .card_image:hover
+     {
+      transform: scale(1.5);
+      transition-duration: 200ms;
+     }
+     .card_title
+     {
+       font-size: 1rem;
+       font-weight: 2000;
+       color: rgb(53, 44, 44);
+       line-height: 1.5rem;
+       margin-bottom: 0.3rem;
+     }
+     
+     .card_title:hover
+     {
+      color: blue;
+     }
+     .card_desc
+     {
+      font-size: 1rem;
+      color: darkorange;
+     }
+     .card_footer_container
+     {
+      display: flex;
+      justify-content: space-between;
+      justify-content: space-evenly;
+      padding: 1.5rem;
+      align-items: end;
+     }
+     .author_container
+     {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+     }
+      /* .author_avatar_container
+     {
+      height: 12px;
+      width: 2.5rem;
+       overflow: hidden; 
+     }   */
+     .author_avatar
+     {
+      height: 43px;
+      border-radius: 45px;
+      /* background-color: aqua; */
+     }
+     .author_info_container
+     {
+      display: flex;
+      flex-direction: column;
+     }
+     .author_name
+     {
+        color: blueviolet;
+     }
+     .author_date
+     {
+      color: rgb(0, 153, 255);
+     } 
+     .card_tag_container
+     {
+      font-size: 0.9rem;
+      border: 1px solid black;
+      border-radius: 2px;
+      line-height:1.3rem;
+      padding: 0.25rem 0.5rem;
+      color: gray;
+      /* position: absolute; */
+      margin: 12px;
+     }
+  </style>
+</head>
+<body>
+   <nav id="navbar">
+     <div id="logo" >
+         <!-- <img src="lamp.jpg" alt=""> -->
+     </div>
+     <ul  >
+        <li class="item" ><a href="#">Home</a></li>
+        <li class="item" ><a href="#">About</a></li>
+        <li class="item" ><a href="#">Service</a></li>
+        <li class="item" ><a href="#">Contact</a></li>
+      </ul>
+   </nav>
+   <section id="Home" >
+    <h1 class="h-primary" >Welcome to my online meal</h1>
+      <p>
+     <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas vitae ducimus. -->
+      </p>
+      <p>
+      <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere totam doloremque aspernatur. -->
+      </p>
+      <button class="btn" >Order Now</button>
+   </section>
+   <!-- <section class="services-container" >
+       <h1 class="h-primary center center"> Our Services</h1>
+        <div id="Services" >
+         <img src="" alt="">
+
+
+        </div>
+   </section> -->
+   <section>
+    <body class=" body_container" >
+      <div class="container">
+         <header class="header_container" >
+          <h1  class="header_title" >Our Services</h1>
+          <p class="header_desc" >
+              <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim non cum distinctio
+              Lorem ipsum dolor sit amet.. -->
+          </p>
+         </header>
+      </div>  
+<main class="main_container" >
+  <!-- card start one -->
+         
+         <div class="card_container">
+            <a href="#" class="card_image_container" >
+              <img 
+          src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=1770&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+          alt="card 1 image"
+          class="card_image"
+          loading="lazy"
+          >
+            </a>
+         <div class="card_title_container" >
+           <!-- <a href="#"> -->
+              <h2 class="card_title" ><b>Wide range of exercise equipment</b> </h2>
+           <!-- </a> -->
+           <p class="card_desc" >
+             Provide Mix of cardio and strength training equipment to cater to different Workout perference...
+           </p>
+         </div>
+           <div class="card_footer_container">
+              <div class="author_container">
+                 <div class="author_avatar_container"  >
+                    <img src="https://cdn-icons-png.flaticon.com/128/563/563828.png" 
+                    alt="avatar 1"
+                    loading="lazy"
+                     class="author_avatar"
+                     >
+                  </div>
+                 <div class="author_info_container"  >
+                    <span class="author_name" >
+                      John Doe
+
+                    </span>
+                    <span class="author_date" >
+                    Sept ,19 , 2021,
+                    </span>
+                  </div>
+                  
+              </div>
+              <div class="card_tag_container" >
+               <span>Technology</span>
+
+              </div>
+           </div>
+         </div>
+         <!-- second card -->
+         <div class="card_container">
+          <a href="#" class="card_image_container" >
+            <img 
+        src="https://cdn.pixabay.com/photo/2020/06/12/00/11/boxing-5288635_640.jpg" 
+        alt="card 1 image"
+        class="card_image"
+        loading="lazy"
+        >
+          </a>
+       <div class="card_title_container" >
+         <!-- <a href="#"> -->
+            <h2 class="card_title" >Qualified personal Trainers</h2>
+         <!-- </a> -->
+         <p class="card_desc" >
+           Trained professionals can provide guidance,motivate members,and Help them achieve their fitness Goals.
+         </p>
+       </div>
+         <div class="card_footer_container">
+            <div class="author_container">
+               <div class="author_avatar_container"  >
+                  <img src="https://cdn-icons-png.flaticon.com/128/7922/7922186.png" 
+                  alt="avatar 1"
+                  loading="lazy"
+                   class="author_avatar"
+                   >
+                </div>
+               <div class="author_info_container"  >
+                  <span class="author_name" >
+                    John Doe
+
+                  </span>
+                  <span class="author_date" >
+                  Sept ,19 , 2021,
+                  </span>
+                </div>
+                
+            </div>
+            <div class="card_tag_container" >
+             <span>Technology</span>
+
+            </div>
+         </div>
+       </div>
+        <!-- third card -->
+       <div class="card_container">
+          <a href="#" class="card_image_container" >
+            <img 
+        src="https://img.freepik.com/premium-photo/man-lifting-weights-with-yellow-banner-that-says-he-s-strong-man_867442-12305.jpg?w=1380" 
+        alt="card 1 image"
+        class="card_image"
+        loading="lazy"
+        >
+          </a>
+       <div class="card_title_container" >
+         <!-- <a href="#"> -->
+            <h2 class="card_title" >Nutritional Guidance</h2>
+         <!-- </a> -->
+         <p class="card_desc" >
+           In-house dietitians or nutritional advice can complement members'workout plans...
+         </p>
+       </div>
+         <div class="card_footer_container">
+            <div class="author_container">
+               <div class="author_avatar_container"  >
+                  <img src="https://cdn-icons-png.flaticon.com/128/2548/2548492.png" 
+                  alt="avatar 1"
+                  loading="lazy"
+                   class="author_avatar"
+                   >
+                </div>
+               <div class="author_info_container"  >
+                  <span class="author_name" >
+                    John Doe
+
+                  </span>
+                  <span class="author_date" >
+                  Sept ,19 , 2021,
+                  </span>
+                </div>
+                
+            </div>
+            <div class="card_tag_container" >
+             <span>Technology</span>
+
+            </div>
+         </div>
+       </div>
+        <!-- fourth card -->
+        <div class="card_container">
+          <a href="#" class="card_image_container" >
+            <img 
+        src="https://img.freepik.com/premium-photo/black-male-athlete-exercises-with-barbell-gym_118086-6951.jpg?w=1380" 
+        alt="card 1 image"
+        class="card_image"
+        loading="lazy"
+        >
+          </a>
+       <div class="card_title_container" >
+         <!-- <a href="#"> -->
+            <h2 class="card_title" >State-of-the-art machines</h2>
+         <!-- </a> -->
+         <p class="card_desc" >
+          Invest in the latest fitness technology to ensure efficient and effective Workouts...
+         </p>
+       </div>
+         <div class="card_footer_container">
+            <div class="author_container">
+               <div class="author_avatar_container"  >
+                  <img src="https://i.pinimg.com/originals/10/95/19/1095193d2a759d3ae32ed7094e2c444d.jpg" 
+                  alt="avatar 1"
+                  loading="lazy"
+                   class="author_avatar"
+                   >
+                </div>
+               <div class="author_info_container"  >
+                  <span class="author_name" >
+                    John Doe
+
+                  </span>
+                  <span class="author_date" >
+                  Sept ,19 , 2021,
+                  </span>
+                </div>
+                
+            </div>
+            <div class="card_tag_container" >
+             <span>Technology</span>
+
+            </div>
+         </div>
+       </div>
+       <!-- fifth card -->
+       <div class="card_container">
+          <a href="#" class="card_image_container" >
+            <img 
+        src="https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=1898&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+        alt="card 1 image"
+        class="card_image"
+        loading="lazy"
+        >
+          </a>
+       <div class="card_title_container" >
+         <!-- <a href="#"> -->
+            <h2 class="card_title" >Locker rooms</h2>
+         <!-- </a> -->
+         <p class="card_desc" >
+           Clean,spacious locker rooms offer comfort and convenience...
+         </p>
+       </div>
+         <div class="card_footer_container">
+            <div class="author_container">
+               <div class="author_avatar_container"  >
+                  <img src="https://thumbs.dreamstime.com/z/graphic-vector-insignia-created-strong-sportsman-biceps-arm-disc-weight-dumb-bell-kettle-bell-sport-equipment-gym-162973725.jpg" 
+                  alt="avatar 1"
+                  loading="lazy"
+                   class="author_avatar"
+                   >
+                </div>
+               <div class="author_info_container"  >
+                  <span class="author_name" >
+                    John Doe
+
+                  </span>
+                  <span class="author_date" >
+                  Sept ,19 , 2021,
+                  </span>
+                </div>
+                
+            </div>
+            <div class="card_tag_container" >
+             <span>Technology</span>
+
+            </div>
+         </div>
+       </div>
+       <!-- sixth card  -->
+       <div class="card_container">
+          <a href="#" class="card_image_container" >
+            <img 
+        src="https://images.unsplash.com/photo-1590487988256-9ed24133863e?q=80&w=1928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+        alt="card 1 image"
+        class="card_image"
+        loading="lazy"
+        >
+          </a>
+       <div class="card_title_container" >
+         <!-- <a href="#"> -->
+            <h2 class="card_title" >Indoor training areas</h2>
+         <!-- </a> -->
+         <p class="card_desc" >
+            An Indoor area with climate control provide a comfortable environment of year-round workouts... <body>
+              
+            </body>
+         </p>
+       </div>
+         <div class="card_footer_container">
+            <div class="author_container">
+               <div class="author_avatar_container"  >
+                  <img src="https://image.similarpng.com/very-thumbnail/2020/12/Bodybuilding-and-gym-logo-on-transparent-background-PNG.png" 
+                  alt="avatar 1"
+                  loading="lazy"
+                   class="author_avatar"
+                   >
+                </div>
+               <div class="author_info_container"  >
+                  <span class="author_name" >
+                    John Doe
+
+                  </span>
+                  <span class="author_date" >
+                  Sept ,19 , 2021,
+                  </span>
+                </div>
+                
+            </div>
+            <div class="card_tag_container" >
+             <span>Technology</span>
+
+            </div>
+         </div>
+       </div>
+        <!-- seven card  -->
+        <div class="card_container">
+          <a href="#" class="card_image_container" >
+            <img 
+        src="https://images.unsplash.com/photo-1590771998996-8589ec9b5ac6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fGd5bXxlbnwwfHwwfHx8MA%3D%3D" 
+        alt="card 1 image"
+        class="card_image"
+        loading="lazy"
+        >
+          </a>
+       <div class="card_title_container" >
+         <!-- <a href="#"> -->
+            <h2 class="card_title" >Aquatic Fitness classes</h2>
+         <!-- </a> -->
+         <p class="card_desc" >
+            Classes like water aerobiv can Provide a low-impact,High-Impact Resistance workout...
+         </p>
+       </div>
+         <div class="card_footer_container">
+            <div class="author_container">
+               <div class="author_avatar_container"  >
+                  <img src="https://thumbs.dreamstime.com/b/bodybuilding-emblem-muscular-strong-bodybuilder-barbell-gym-logo-badge-vector-illustration-bodybuilding-emblem-muscular-256266362.jpg" 
+                  alt="avatar 1"
+                  loading="lazy"
+                   class="author_avatar"
+                   >
+                </div>
+               <div class="author_info_container"  >
+                  <span class="author_name" >
+                    John Doe
+
+                  </span>
+                  <span class="author_date" >
+                  Sept ,19 , 2021,
+                  </span>
+                </div>
+                
+            </div>
+            <div class="card_tag_container" >
+             <span>Technology</span>
+
+            </div>
+         </div>
+       </div>
+       <!-- eight card -->
+       <div class="card_container">
+          <a href="#" class="card_image_container" >
+            <img 
+        src="https://images.unsplash.com/photo-1593476123561-9516f2097158?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGd5bXxlbnwwfHwwfHx8MA%3D%3D" 
+        alt="card 1 image"
+        class="card_image"
+        loading="lazy"
+        >
+          </a>
+       <div class="card_title_container" >
+         <!-- <a href="#"> -->
+            <h2 class="card_title" >Sports Facilities</h2>
+         <!-- </a> -->
+         <p class="card_desc" >
+            Indoor courts or fields allow for team sports or competitive activities...
+         </p>
+       </div>
+         <div class="card_footer_container">
+            <div class="author_container">
+               <div class="author_avatar_container"  >
+                  <img src="https://image.shutterstock.com/image-vector/muscle-bodybuilder-suitable-gym-mascot-600w-155288381.jpg" 
+                  alt="avatar 1"
+                  loading="lazy"
+                   class="author_avatar"
+                   >
+                </div>
+               <div class="author_info_container"  >
+                  <span class="author_name" >
+                    John Doe
+
+                  </span>
+                  <span class="author_date" >
+                  Sept ,19 , 2021,
+                  </span>
+                </div>
+                
+            </div>
+            <div class="card_tag_container" >
+             <span>Technology</span>
+
+            </div>
+         </div>
+       </div>
+        <!-- card start end -->
+        <!-- <img src="Golds_Gym_logo_logotype.png" alt=""> -->
+</main>        
+</body>
+
+   </section>
+   
+   
+</body>
+</html>
+
