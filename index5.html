@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            display: inline-block;
+            border: 2px solid rgb(223, 27, 27);
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+           background-color: blueviolet;
+            color: rgb(251, 245, 245);
+            border-radius: 12px;
+        }
+        #box3
+        {
+            /* relative manjech jar box jar move karycha asela ani za */
+           /* position: relative;
+           position: absolute; */
+           top: 3px;
+
+           /* position: fixed manjech yamde fixed box chi postion aste te scroll kele tari te tasech rahe; */
+           position: sticky;
+           background-image: url('https://th.bing.com/th/id/R.3f70e0250392cb0c3696beb6bc0043ea?rik=gwl8c9AxzmTpMg&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1879205.jpg&ehk=V0Bgd2iyBjmXvx4BMjjhO8q8me94xTyIOUueuJHsynU%3d&risl=&pid=ImgRaw&r=0');
+
+        }
+        .container
+        {
+            background-color: rgb(188, 165, 165);
+            border: 2px solid royalblue;
+            height: 900px;
+        }
+        .container input
+        {
+            width: 100px;
+            border-radius: 43px;
+        }
+        img
+        {
+            height: 13px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+    <h1>This my written notes</h1>
+    <div class="box" id="box1">1<input type="text">
+        <img src="blacktshirt.jpg" alt="">
+    </div>
+    <div class="box" id="box2">2<input type="text"></div>
+    <div class="box" id="box3" >3<input type="text"></div>
+    <div class="box" id="box4" >4<input type="text"></div>
+    </div>
+    
+</body>
+</html>
